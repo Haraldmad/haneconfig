@@ -9,8 +9,10 @@
 3. **Proactive Ideas & Proposals:**
    - MUST ALWAYS obtain explicit user approval before acting on proactive ideas or architectural proposals.
 
-4. **GPACCG V8.0 Prompt Generator Directive:**
-   - Whenever the user requests to load/sync configuration or generate a prompt for Claude Code, provide a tailored GPACCG V8.0 prompt in markdown code blocks.
+4. **GPACCG V8.0 Task Prompt Generator Directive:**
+   - Claude Code läser automatiskt in alla sina regler, skills och MCP-servrar nativt från `~/.claude.json` och `~/.claude/skills/`. Det behövs därför ingen initierings-prompt för att ladda Claude.
+   - Generera endast en skräddarsydd GPACCG V8.0-prompt i markdown-kodblock när en specifik exekveringsuppgift ska lämnas över till Claude Code.
+
 
 5. **Design & Style Enforcement:**
    - Använd alltid färgkoder, typografi och spacing från DESIGN.md. Hitta inte på egna värden.
