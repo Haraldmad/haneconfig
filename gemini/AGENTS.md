@@ -14,3 +14,7 @@
 
 5. **Design & Style Enforcement:**
    - Använd alltid färgkoder, typografi och spacing från DESIGN.md. Hitta inte på egna värden.
+
+6. **Stitch MCP Integration & Auto-Sync:**
+   - Stitch MCP (`@_davideast/stitch-mcp proxy`) är permanent integrerad för Claude Code (`~/.claude.json`) via miljövariabeln `STITCH_API_KEY`. Vid laddning eller synkning av haneconfig, verifiera att Stitch MCP är aktivt och inkludera Stitch MCP-kontext i genererade GPACCG V8.0-prompter.
+
