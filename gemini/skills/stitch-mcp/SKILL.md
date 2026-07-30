@@ -1,33 +1,54 @@
 ---
 name: stitch-mcp
-description: Integration, verification, and prompt generation for Stitch MCP (@_davideast/stitch-mcp proxy). Connects Google Stitch AI UI designs to code generation workflows for Gemini and Claude Code.
+description: Interactive Google Stitch Project Import Wizard and MCP workflow. Auto-triggers interactive project & screen selection chain.
 ---
 
-# Stitch MCP Skill (Gemini & haneconfig)
+# Stitch MCP Skill & Interactive Import Wizard (haneconfig)
 
 ## Syfte
-Hantera, verifiera och generera strukturerade GPACCG V8.0-prompter för Stitch MCP i Gemini och Claude Code.
+Tillhandahålla en interaktiv, automatisk guidad kedja (Wizard Workflow) för att hämta, välja och importera skärmar och komponenter från Google Stitch till källkoden.
 
-## Workflow & Instruktioner
+---
 
-### 1. Verifiering av Anslutning
-- Kontrollera att `STITCH_API_KEY` finns i systemets miljövariabler eller i `~/.claude.json`.
-- Säkerställ att MCP-servern `stitch` är konfigurerad med kommandot:
-  `npx -y @_davideast/stitch-mcp proxy`
+## ⚡ Interaktiv Import-Kedja (Auto-Trigger)
 
-### 2. Design-till-Kod Workflow
-- **Hämta skärmar:** Använd Stitch MCP för att inspektera genererade skärmar och komponenter.
-- **Färg & Typografi:** Matcha färgkoder och typografi med `DESIGN.md`.
-- **Kodgenerering:** Generera ren React/Vite-kod baserat på Stitch-design utan att använda generiska fallback-värden.
+När användaren säger:
+- *"Visa mina Google Stitch-projekt"*
+- *"Hämta från Stitch"*
+- *"Importera Stitch-projekt"*
+- *"Stitch wizard"*
 
-### 3. Claude Code GPACCG V8.0 Prompter
-Inkludera alltid följande kontext i genererade prompter för Claude Code när Stitch MCP används:
+SKA agenten automatiskt exekvera följande interaktiva steg-för-steg-kedja:
 
-```markdown
-[Context / Goal]
-Bygg frontend-komponenter baserade på Google Stitch UI-design via Stitch MCP.
+### Steg 1: Lista & Välj Projekt
+1. Kör automatiskt Stitch MCP-verktyget `list_projects`.
+2. Presentera alla tillgängliga Stitch-projekt i en snygg numrerad lista med Projektnamn och ID.
+3. Ställ frågan till användaren:
+   > *"Vilket Stitch-projekt vill du arbeta med? (Ange nummer eller namn)"*
+4. Vänta på användarens svar.
 
-[Constraints to Enforce]
-- Använd Stitch MCP (`@_davideast/stitch-mcp proxy`).
-- Följ färgkoder och spacing från DESIGN.md.
-```
+### Steg 2: Lista & Välj Skärmar
+1. Anrop `list_screens` för det valda projektet.
+2. Presentera alla skärmar i projektet i en numrerad lista.
+3. Ställ frågan till användaren:
+   > *"Vilka skärmar vill du importera koden för?"*
+   > - **1.** En specifik skärm (ange nummer/namn)
+   > - **2.** Alla skärmar i projektet
+4. Vänta på användarens svar.
+
+### Steg 3: Välj Målmapp & Komponentstruktur
+1. Ställ frågan till användaren:
+   > *"Var vill du att komponenterna ska skapas i projektet?"* (t.ex. `src/components/` eller `src/pages/` - standard: `src/components/`)
+2. Vänta på användarens svar.
+
+### Steg 4: Kodgenerering & Efterlevnad av DESIGN.md
+1. Anrop `get_screen_code` för valda skärmar.
+2. Skapa snygga React/Vite-komponenter i den valda mappen.
+3. Säkerställ att färgkoder, typografi och spacing följer `DESIGN.md`.
+4. Rapportera skapade filer och erbjud att förhandsgranska (`serve_screen`) eller köra dev-servern.
+
+---
+
+## Technical Guardrails
+- Använd alltid Stitch MCP proxy (`@_davideast/stitch-mcp proxy`).
+- Säkerställ att `STITCH_API_KEY` används från miljön.

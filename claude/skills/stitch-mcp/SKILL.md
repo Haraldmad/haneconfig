@@ -1,22 +1,23 @@
 ---
 name: stitch-mcp
-description: Execute Stitch MCP workflows in Claude Code. Connects Google Stitch AI UI designs to production code.
+description: Interactive Google Stitch Project Import Wizard and MCP execution guidelines for Claude Code.
 ---
 
-# Stitch MCP Skill for Claude Code
+# Stitch MCP Skill & Interactive Wizard for Claude Code
 
 ## Purpose
-Directly execute design-to-code workflows using the Stitch MCP proxy (`@_davideast/stitch-mcp proxy`).
+Provide a step-by-step interactive project & screen selection chain when retrieving Google Stitch UI designs into code.
 
-## Execution Guidelines
+## Interactive Wizard Chain
 
-### 1. Tool Usage
-- Use available Stitch MCP tools (`list_projects`, `get_screen_code`, `serve_screen`) to inspect UI layouts, components, and design specs directly from Google Stitch.
+When triggered with:
+- "Show my Stitch projects" / "Visa mina Stitch-projekt"
+- "Import from Stitch" / "Importera från Stitch"
+- "Stitch wizard"
 
-### 2. Design System Compliance
-- Map extracted component designs to project design systems and `DESIGN.md`.
-- Preserve exact color tokens, typography, and layout spacing.
+Follow this exact sequential chain:
 
-### 3. Execution Guardrails
-- Ensure `STITCH_API_KEY` is available in environment variables or `~/.claude.json`.
-- Report status using the mandatory AI Handoff State block.
+1. **List Projects:** Call `list_projects` and present a numbered list of available Stitch projects. Prompt user for selection.
+2. **List Screens:** Call `list_screens` for the selected project. Ask user whether to import specific screen(s) or all screens.
+3. **Target Path:** Ask user where components should be created (default: `src/components/`).
+4. **Code Generation:** Call `get_screen_code` for selected screens, generate production React components complying with `DESIGN.md`, and report AI Handoff State.
