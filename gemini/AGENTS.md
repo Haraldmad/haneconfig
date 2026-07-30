@@ -23,4 +23,8 @@
 7. **Automatic Project Onboarding (CLAUDE.md Provisioning):**
    - När användaren säger "Ladda haneconfig" i en projektmapp, kontrollera om `CLAUDE.md` finns i projektroten. Om den saknas, skapa automatiskt `CLAUDE.md` från haneconfig-mallen så att projektet är 100% redo för både Gemini och Claude Code.
 
+8. **Stitch Project Import Workspace Directive:**
+   - När ett Stitch-projekt eller komponent har importerats ska mappen för det importerade projektet automatiskt läggas till som/rekommenderas som aktiv workspace i IDE:n ("add folder to workspace"). Detta ska ALLTID ske efter varje Stitch-import.
+
+
 

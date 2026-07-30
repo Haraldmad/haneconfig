@@ -13,3 +13,5 @@ Whenever requested to list or show Stitch projects (e.g. "visa mina stitch proje
 1. **List Projects & Drafts (ALWAYS COMPLETE):** Immediately execute `list_projects` and present all project titles, design systems, and ALL individual screen instances/drafts (1, 2, 3...). Prompt user for selection.
 2. **Target Path:** Ask user where components should be created (default: `src/components/`).
 3. **Code Generation:** Call `get_screen_code` for selected screens/drafts, generate production React components complying with `DESIGN.md`, and report AI Handoff State.
+4. **Add Folder to Workspace:** ALWAYS add or prompt the user to set the target project directory as the active workspace in Antigravity IDE and Claude Code immediately after import.
+

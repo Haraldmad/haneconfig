@@ -35,6 +35,11 @@ När användaren ber om att lista eller hämta från Stitch:
 3. Säkerställ att färgkoder, typografi och spacing följer `DESIGN.md`.
 4. Rapportera skapade filer och erbjud förhandsgranskning (`serve_screen`).
 
+### Steg 4: Automatisk Workspace-tillägg (Add Folder to Workspace)
+1. När kodimporten är slutförd SKALL agenten ALLTID automatiskt lägga till/rekommendera projektmappen som aktiv Workspace ("Add Folder to Workspace").
+2. Ge bekräftelse och uppmaning till användaren att mappen satts/rekommenderats som aktiv workspace för Antigravity IDE och Claude Code.
+
+
 ---
 
 ## Technical Guardrails
