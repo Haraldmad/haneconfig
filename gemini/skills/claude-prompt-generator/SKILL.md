@@ -22,7 +22,8 @@ Beskriv vad som ska åstadkommas från ett produkt- och användarperspektiv.
 - Explicita funktionella krav och komponenter.
 
 [Constraints to Enforce]
-- Preserverade arbetsflöden, stilregler (DESIGN.md) och beroenden.
+- Använd alltid färgkoder, typografi och spacing från DESIGN.md. Hitta inte på egna värden.
+- Preserverade arbetsflöden och beroenden.
 
 [Exploration Mandate]
 - Instruera Claude Code att söka och inspektera filsystemet innan editering.

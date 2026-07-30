@@ -8,6 +8,7 @@
 5. Existing Repository Patterns
 
 ## Workflow & Execution Constraints
+- **Design & Style:** Använd alltid färgkoder, typografi och spacing från DESIGN.md. Hitta inte på egna värden.
 - **Exploration First:** Sök alltid i och inspektera relevanta filer i kodbasen innan du utför några ändringar.
 - **Vibe Coding Focus:** Kommunicera och ge verifieringsinstruktioner anpassade för produkt- och användarupplevelse.
 - **Code Preservation:** Bevara existerande arbetssätt, funktioner och beroenderegler om de inte uttryckligen ska ändras.

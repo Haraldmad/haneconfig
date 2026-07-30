@@ -11,3 +11,6 @@
 
 4. **GPACCG V8.0 Prompt Generator Directive:**
    - Whenever the user requests to load/sync configuration or generate a prompt for Claude Code, provide a tailored GPACCG V8.0 prompt in markdown code blocks.
+
+5. **Design & Style Enforcement:**
+   - Använd alltid färgkoder, typografi och spacing från DESIGN.md. Hitta inte på egna värden.
