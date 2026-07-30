@@ -18,17 +18,18 @@ if (Test-Path ".\claude\skills") {
     Write-Host "[√] Synkade Claude skills till $claudeConfigDir" -ForegroundColor Green
 }
 
-# Ensure Stitch MCP is registered in ~/.claude.json
+# Ensure Stitch MCP is registered in ~/.claude.json using gcloud ADC / system gcloud
 $stitchKey = $env:STITCH_API_KEY
 if (-not $stitchKey) {
     $stitchKey = [System.Environment]::GetEnvironmentVariable('STITCH_API_KEY', 'User')
 }
 
 if ($stitchKey) {
-    npx -y @anthropic-ai/claude-code mcp add -s user stitch -e STITCH_API_KEY=$stitchKey -- npx -y @_davideast/stitch-mcp proxy | Out-Null
-    Write-Host "[√] Stitch MCP verifierad i Claude Code" -ForegroundColor Green
+    npx -y @anthropic-ai/claude-code mcp add -s user stitch -e STITCH_API_KEY=$stitchKey -e STITCH_USE_SYSTEM_GCLOUD=1 -- npx -y @_davideast/stitch-mcp proxy | Out-Null
+    Write-Host "[√] Stitch MCP verifierad i Claude Code (med gcloud ADC & API-nyckel)" -ForegroundColor Green
 } else {
-    Write-Host "[!] Obs: STITCH_API_KEY saknas i miljövariabler" -ForegroundColor Yellow
+    npx -y @anthropic-ai/claude-code mcp add -s user stitch -e STITCH_USE_SYSTEM_GCLOUD=1 -- npx -y @_davideast/stitch-mcp proxy | Out-Null
+    Write-Host "[√] Stitch MCP verifierad i Claude Code (gcloud ADC mode)" -ForegroundColor Green
 }
 
 Write-Host "Synkronisering slutförd!" -ForegroundColor Cyan
