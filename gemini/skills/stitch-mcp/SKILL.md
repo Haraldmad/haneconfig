@@ -24,20 +24,21 @@ När användaren ber om att lista eller hämta från Stitch:
    > *"Vilken skärm eller vilket utkast vill du importera koden för? (Ange nummer, eller svara 'alla')"*
 5. Vänta på användarens svar.
 
-### Steg 2: Välj Målmapp & Komponentstruktur
-1. Ställ frågan till användaren:
-   > *"Var vill du att komponenterna ska skapas i projektet?"* (t.ex. `src/components/` eller `src/pages/` - standard: `src/components/`)
-2. Vänta på användarens svar.
+### Steg 2: Välj Målmapp & Projektstruktur (Dynamisk Hemkatalog)
+1. Hårda ALDRIG användarnamnet i sökvägar. Använd dynamisk hemkatalog (`$env:USERPROFILE\projekt\` på Windows eller `~/projekt/`).
+2. Skapa automatiskt ett dedikerat projekt i användarens projektmapp (t.ex. `<hemkatalog>/projekt/<projekt-namn>/`).
+3. Fråga användaren om komponentstruktur (t.ex. `src/components/` eller `src/pages/` - standard: `src/components/`).
 
 ### Steg 3: Kodgenerering & Efterlevnad av DESIGN.md
 1. Anropa `get_screen_code` för valda skärmar/utkast.
-2. Skapa produktionstestade React/Vite-komponenter i den valda mappen.
-3. Säkerställ att färgkoder, typografi och spacing följer `DESIGN.md`.
-4. Rapportera skapade filer och erbjud förhandsgranskning (`serve_screen`).
+2. Skapa produktionstestade React/Vite-komponenter i mappen under `<hemkatalog>/projekt/<projekt-namn>/`.
+3. Skapa `CLAUDE.md` i projektroten om den saknas.
+4. Säkerställ att färgkoder, typografi och spacing följer `DESIGN.md`.
 
 ### Steg 4: Automatisk Workspace-tillägg (Add Folder to Workspace)
-1. När kodimporten är slutförd SKALL agenten ALLTID automatiskt lägga till/rekommendera projektmappen som aktiv Workspace ("Add Folder to Workspace").
-2. Ge bekräftelse och uppmaning till användaren att mappen satts/rekommenderats som aktiv workspace för Antigravity IDE och Claude Code.
+1. När kodimporten är slutförd SKALL agenten ALLTID automatiskt rekommendera och registrera den nyskapade projektmappen (`<hemkatalog>/projekt/<projekt-namn>/`) som aktiv Workspace ("Add Folder to Workspace").
+2. Ge bekräftelse och länk till användaren att mappen satts/rekommenderats som aktiv workspace för Antigravity IDE och Claude Code.
+
 
 
 ---

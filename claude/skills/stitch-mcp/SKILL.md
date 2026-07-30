@@ -11,7 +11,8 @@ Whenever requested to list or show Stitch projects (e.g. "visa mina stitch proje
 ## Interactive Wizard Chain
 
 1. **List Projects & Drafts (ALWAYS COMPLETE):** Immediately execute `list_projects` and present all project titles, design systems, and ALL individual screen instances/drafts (1, 2, 3...). Prompt user for selection.
-2. **Target Path:** Ask user where components should be created (default: `src/components/`).
-3. **Code Generation:** Call `get_screen_code` for selected screens/drafts, generate production React components complying with `DESIGN.md`, and report AI Handoff State.
-4. **Add Folder to Workspace:** ALWAYS add or prompt the user to set the target project directory as the active workspace in Antigravity IDE and Claude Code immediately after import.
+2. **Target Project Path (Dynamic User Profile):** NEVER hardcode username. Use dynamic home path (`$env:USERPROFILE\projekt\<project-name>` or `~/projekt/<project-name>`). Automatically create project folder under `<user-home>/projekt/<project-name>/`.
+3. **Code Generation:** Call `get_screen_code` for selected screens/drafts, generate production React components complying with `DESIGN.md`, create `CLAUDE.md`, and report AI Handoff State.
+4. **Add Folder to Workspace:** ALWAYS add or prompt the user to set the new project directory (`<user-home>/projekt/<project-name>/`) as the active workspace in Antigravity IDE and Claude Code immediately after import.
+
 
