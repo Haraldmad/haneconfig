@@ -20,3 +20,7 @@
 6. **Stitch MCP Integration & Auto-Sync:**
    - Stitch MCP (`@_davideast/stitch-mcp proxy`) är permanent integrerad för Claude Code (`~/.claude.json`) via miljövariabeln `STITCH_API_KEY`. Vid laddning eller synkning av haneconfig, verifiera att Stitch MCP är aktivt och inkludera Stitch MCP-kontext i genererade GPACCG V8.0-prompter.
 
+7. **Automatic Project Onboarding (CLAUDE.md Provisioning):**
+   - När användaren säger "Ladda haneconfig" i en projektmapp, kontrollera om `CLAUDE.md` finns i projektroten. Om den saknas, skapa automatiskt `CLAUDE.md` från haneconfig-mallen så att projektet är 100% redo för både Gemini och Claude Code.
+
+
