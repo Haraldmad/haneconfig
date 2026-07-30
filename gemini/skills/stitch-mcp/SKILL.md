@@ -1,12 +1,14 @@
 ---
 name: stitch-mcp
-description: Interactive Google Stitch Project Import Wizard and MCP workflow. Auto-triggers interactive project & screen selection chain.
+description: Interactive Google Stitch Project Import Wizard and MCP workflow. Auto-triggers interactive project, draft & screen selection chain.
 ---
 
-# Stitch MCP Skill & Interactive Import Wizard (haneconfig)
+# Stitch MCP Skill & Mandatory Complete Listing (haneconfig)
 
-## 📌 OBLIGATORISKT DIREKTIV
-När användaren ber om att se eller lista sina Stitch-projekt (t.ex. *"visa mina stitch projekt"*, *"lista mina stitch projekt"*, *"stitch projekt"*), SKALL agenten ALLTID omedelbart anropa `list_projects` och presentera alla tillgängliga projekt med Projektnamn, ID, senast uppdaterad och antal skärmar.
+## 📌 OBLIGATORISKT DIREKTIV FOR DRAFTS & PROJEKT
+När användaren ber om att se eller lista sina Stitch-projekt (t.ex. *"visa mina stitch projekt"*, *"lista alla projekt inklusive utkast"*, *"stitch projekt"*), SKALL agenten ALLTID:
+1. Omedelbart köra anropet för `list_projects`.
+2. Presentera alla huvudprojekt OCH alla underliggande **skärmar, utkast (drafts), varianter och canvas-instanser** i en komplett, tydligt strukturerad numrerad lista.
 
 ---
 
@@ -14,35 +16,27 @@ När användaren ber om att se eller lista sina Stitch-projekt (t.ex. *"visa min
 
 När användaren ber om att lista eller hämta från Stitch:
 
-### Steg 1: Lista & Välj Projekt (ALLTID DIREKT)
-1. Kör OMEDELBART Stitch MCP-verktyget `list_projects`.
-2. Presentera alla tillgängliga Stitch-projekt i en snygg numrerad lista med Projektnamn, ID och design-system-summering.
-3. Ställ därefter frågan till användaren:
-   > *"Vilket Stitch-projekt vill du arbeta med? (Ange nummer eller namn)"*
-4. Vänta på användarens svar.
+### Steg 1: Lista Projekt, Skärmar & Utkast (ALLTID KOMPLETT)
+1. Kör OMEDELBART `list_projects`.
+2. Presentera projektets titel och uppdateringstid.
+3. Radera inte eller dölj inte några skärmar – lista ALLA enskilda **utkast/skärmar** (t.ex. Desktop Layouts, Mobile UI, Diff Viewers, Canvas Iterations) med siffernumrering (1, 2, 3...).
+4. Ställ frågan till användaren:
+   > *"Vilken skärm eller vilket utkast vill du importera koden för? (Ange nummer, eller svara 'alla')"*
+5. Vänta på användarens svar.
 
-### Steg 2: Lista & Välj Skärmar
-1. Anrop `list_screens` för det valda projektet.
-2. Presentera alla skärmar i projektet i en numrerad lista.
-3. Ställ frågan till användaren:
-   > *"Vilka skärmar vill du importera koden för?"*
-   > - **1.** En specifik skärm (ange nummer/namn)
-   > - **2.** Alla skärmar i projektet
-4. Vänta på användarens svar.
-
-### Steg 3: Välj Målmapp & Komponentstruktur
+### Steg 2: Välj Målmapp & Komponentstruktur
 1. Ställ frågan till användaren:
    > *"Var vill du att komponenterna ska skapas i projektet?"* (t.ex. `src/components/` eller `src/pages/` - standard: `src/components/`)
 2. Vänta på användarens svar.
 
-### Steg 4: Kodgenerering & Efterlevnad av DESIGN.md
-1. Anrop `get_screen_code` för valda skärmar.
-2. Skapa snygga React/Vite-komponenter i den valda mappen.
+### Steg 3: Kodgenerering & Efterlevnad av DESIGN.md
+1. Anropa `get_screen_code` för valda skärmar/utkast.
+2. Skapa produktionstestade React/Vite-komponenter i den valda mappen.
 3. Säkerställ att färgkoder, typografi och spacing följer `DESIGN.md`.
-4. Rapportera skapade filer och erbjud att förhandsgranska (`serve_screen`) eller köra dev-servern.
+4. Rapportera skapade filer och erbjud förhandsgranskning (`serve_screen`).
 
 ---
 
 ## Technical Guardrails
 - Använd alltid Stitch MCP proxy (`@_davideast/stitch-mcp proxy`).
-- Säkerställ att `STITCH_API_KEY` används från miljön.
+- Säkerställ att `STITCH_USE_SYSTEM_GCLOUD=1` och `STITCH_API_KEY` används.
