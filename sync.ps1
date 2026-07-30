@@ -19,8 +19,13 @@ if (Test-Path ".\claude\skills") {
 }
 
 # Ensure Stitch MCP is registered in ~/.claude.json
-if ($env:STITCH_API_KEY) {
-    npx -y @anthropic-ai/claude-code mcp add -s user stitch -e STITCH_API_KEY=$env:STITCH_API_KEY -- npx -y @_davideast/stitch-mcp proxy | Out-Null
+$stitchKey = $env:STITCH_API_KEY
+if (-not $stitchKey) {
+    $stitchKey = [System.Environment]::GetEnvironmentVariable('STITCH_API_KEY', 'User')
+}
+
+if ($stitchKey) {
+    npx -y @anthropic-ai/claude-code mcp add -s user stitch -e STITCH_API_KEY=$stitchKey -- npx -y @_davideast/stitch-mcp proxy | Out-Null
     Write-Host "[√] Stitch MCP verifierad i Claude Code" -ForegroundColor Green
 } else {
     Write-Host "[!] Obs: STITCH_API_KEY saknas i miljövariabler" -ForegroundColor Yellow
