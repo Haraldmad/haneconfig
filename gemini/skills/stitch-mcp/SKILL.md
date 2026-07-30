@@ -5,25 +5,19 @@ description: Interactive Google Stitch Project Import Wizard and MCP workflow. A
 
 # Stitch MCP Skill & Interactive Import Wizard (haneconfig)
 
-## Syfte
-Tillhandahålla en interaktiv, automatisk guidad kedja (Wizard Workflow) för att hämta, välja och importera skärmar och komponenter från Google Stitch till källkoden.
+## 📌 OBLIGATORISKT DIREKTIV
+När användaren ber om att se eller lista sina Stitch-projekt (t.ex. *"visa mina stitch projekt"*, *"lista mina stitch projekt"*, *"stitch projekt"*), SKALL agenten ALLTID omedelbart anropa `list_projects` och presentera alla tillgängliga projekt med Projektnamn, ID, senast uppdaterad och antal skärmar.
 
 ---
 
 ## ⚡ Interaktiv Import-Kedja (Auto-Trigger)
 
-När användaren säger:
-- *"Visa mina Google Stitch-projekt"*
-- *"Hämta från Stitch"*
-- *"Importera Stitch-projekt"*
-- *"Stitch wizard"*
+När användaren ber om att lista eller hämta från Stitch:
 
-SKA agenten automatiskt exekvera följande interaktiva steg-för-steg-kedja:
-
-### Steg 1: Lista & Välj Projekt
-1. Kör automatiskt Stitch MCP-verktyget `list_projects`.
-2. Presentera alla tillgängliga Stitch-projekt i en snygg numrerad lista med Projektnamn och ID.
-3. Ställ frågan till användaren:
+### Steg 1: Lista & Välj Projekt (ALLTID DIREKT)
+1. Kör OMEDELBART Stitch MCP-verktyget `list_projects`.
+2. Presentera alla tillgängliga Stitch-projekt i en snygg numrerad lista med Projektnamn, ID och design-system-summering.
+3. Ställ därefter frågan till användaren:
    > *"Vilket Stitch-projekt vill du arbeta med? (Ange nummer eller namn)"*
 4. Vänta på användarens svar.
 
