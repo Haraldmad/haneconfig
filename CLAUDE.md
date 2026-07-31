@@ -1,18 +1,14 @@
 # Project Governance & Execution Rules (GPACCG V8.0)
 
-> **GPACCG V8.0 Framework (Global Prompt Architecture & Claude Code Governance v8.0):**
-> Globalt styrningsramverk för sömlöst AI-samarbete mellan Gemini (Master Architect) och Claude Code (Executor). Det definierar strikt prioriteringsordning, exploration-first arbetsflöden, design-efterlevnad, anti-loop/rollback-resiliens och obligatorisk AI HANDOFF STATE-rapportering.
-
 ## Priority Hierarchy
 1. System Requirements
 2. Explicit User Task
 3. CLAUDE.md Guidelines
-4. Screen-level Inline Design Tokens / project_specs.md (Skärmspecifika inline-tokens från Stitch har företräde för den varianten)
-5. Existing Repository Patterns & DESIGN.md
+4. project_specs.md
+5. Existing Repository Patterns
 
 ## Workflow & Execution Constraints
-- **Design & Style:** Använd i första hand inline design-tokens (`index.html` / Stitch JSON) för importerade Stitch-skärmar. Uppdatera `DESIGN.md` så att den reflekterar den aktiva skärmens designsystem istället för att tvinga fram gamla/motstridiga färgkoder.
-- **Asset Downloads:** Om Stitch MCP `download_assets` misslyckas eller inte skriver filer till disk, ladda ner bild- och asset-URL:er direkt via `curl -L -o <lokal-fil> "<url>"`.
+- **Design & Style:** Använd alltid färgkoder, typografi och spacing från DESIGN.md. Hitta inte på egna värden.
 - **Exploration First:** Sök alltid i och inspektera relevanta filer i kodbasen innan du utför några ändringar.
 - **Vibe Coding Focus:** Kommunicera och ge verifieringsinstruktioner anpassade för produkt- och användarupplevelse.
 - **Code Preservation:** Bevara existerande arbetssätt, funktioner och beroenderegler om de inte uttryckligen ska ändras.

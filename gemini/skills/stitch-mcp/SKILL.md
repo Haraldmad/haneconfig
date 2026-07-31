@@ -31,9 +31,10 @@ När användaren ber om att lista eller hämta från Stitch:
 
 ### Steg 3: Kodgenerering & Efterlevnad av DESIGN.md
 1. Anropa `get_screen_code` för valda skärmar/utkast.
-2. Skapa produktionstestade React/Vite-komponenter i mappen under `<hemkatalog>/projekt/<projekt-namn>/`.
-3. Skapa `CLAUDE.md` i projektroten om den saknas.
-4. Säkerställ att färgkoder, typografi och spacing följer `DESIGN.md`.
+2. Ladda ned alla hosted bild-URL:er/assets till `public/` eller `assets/`. Om Stitch `download_assets` misslyckas eller körs i sandlåda, använd `curl -L -o <sökväg> "<url>"` för att hämta bilderna från HTML/JSON-responsen.
+3. Importerade skärmars inline-tokens (t.ex. `index.html` Tailwind config) är källan till sanning för den skärmen. Uppdatera `DESIGN.md` så att den överensstämmer med skärmens designtokens.
+4. Skapa produktionstestade React/Vite-komponenter i mappen under `<hemkatalog>/projekt/<projekt-namn>/`.
+5. Skapa `CLAUDE.md` i projektroten om den saknas.
 
 ### Steg 4: Automatisk Workspace-tillägg (Add Folder to Workspace)
 1. När kodimporten är slutförd SKALL agenten ALLTID automatiskt rekommendera och registrera den nyskapade projektmappen (`<hemkatalog>/projekt/<projekt-namn>/`) som aktiv Workspace ("Add Folder to Workspace").

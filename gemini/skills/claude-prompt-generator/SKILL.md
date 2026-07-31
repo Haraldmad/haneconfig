@@ -22,8 +22,9 @@ Beskriv vad som ska åstadkommas från ett produkt- och användarperspektiv.
 - Explicita funktionella krav och komponenter.
 
 [Constraints to Enforce]
-- Använd alltid färgkoder, typografi och spacing från DESIGN.md. Hitta inte på egna värden.
-- Preserverade arbetsflöden och beroenden.
+- **Design Tokens Precedence:** Importerade skärmars inline-tokens (`index.html` / Stitch JSON) är primära designtokens för den varianten. Uppdatera `DESIGN.md` vid behov så att färgkoder/typografi stämmer överens.
+- **Asset Downloads:** Om Stitch MCP `download_assets` inte sparar filer lokalt, extrahera bild-URL:er direkt från HTML/JSON och ladda ner via `curl -L -o <sökväg> "<url>"`.
+- **Governance:** GPACCG V8.0 är det aktiva projekt-governance-ramverket enligt `CLAUDE.md`.
 
 [Exploration Mandate]
 - Instruera Claude Code att söka och inspektera filsystemet innan editering.
