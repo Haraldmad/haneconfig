@@ -1,41 +1,27 @@
-# DESIGN.md — Novo Studio (minimal-editorial preset)
+# Novo Studio – Design System (DESIGN.md - Creative Freedom & Guardrails)
 
-## Brand & Identity (webarchitect)
-- Name: Novo Studio (novostudio.se)
-- Identity: Exklusiv skandinavisk designstudio och magasinutgåva. Inga tråkiga apparatboxar eller plastiga kort – sidan känns som ett tryckt exklusivt arkitektur- eller designtidskriftsuppslag.
-- Personality: Redaktionell, kompromisslös, tyst exklusiv, ståtlig.
-- Tone: Självsäker, konstnärlig och krispigt direkt.
+## 🎨 Identity & Vibe
+Novo Studio är en kompromisslös skandinavisk tech- och designstudio. 
+Designen har karaktär som en högklassig arkitektutställning: generöst med whitespace, djup typografisk kontrast, asymmetrisk bento-layout och taktila komponenter.
 
-## Colors
-- Background: Paper Linen #FAF7F2 (Varm pappersvit – ALDRIG ren vit eller tråkig AI-grå)
-- Surface Accent: Parchment #F0EBE3
-- Surface Dark: Deep Walnut #1A1714 (för inverterade sektioner)
-- Text Primary: Ink Walnut #1A1714 (maximal skärpa)
-- Text Secondary: Driftwood #6B6560
-- Text Accent: Kiln Gold-Brown #8B6F47 / Vermilion #CC5833
-- Security / Trust Accent: Sage Forest #5B7A5E (för SSL & 100/100 Speed)
-- Border: Sandstone #D4C8B8 (1px solid hairline)
+## 🎨 Color System (Design Tokens)
+- Background Primary: #F4F2EC (Warm Nordic Paper / Off-White – ALDRIG ren vit eller tråkig AI-grå)
+- Surface Card: #FFFFFF (Pure White Contrast Panel)
+- Surface Dark Accent: #121316 (Deep Ink Black – för asymmetriska färgblock)
+- Text Primary: #121316 (Deep Ink Black – maximal typografisk skärpa)
+- Text Secondary: #575962 (Muted Charcoal Slate)
+- Accent Primary (Action): #F97316 (Electric Terracotta / Warm Vermilion – ALDRIG standardblå)
+- Accent Trust / Security: #059669 (Emerald Green – för SSL & 100/100 Google Speed)
+- Border: #D8D5CB (1.5px Solid Architectural Linework)
 
-## Typography (Anti-Slop Editorial)
-- Display / Hero Headline: Fraunces / Cormorant Garamond 300 Italic (Enorm typografisk skala: 4.5rem+, tracking 0.02em – dramatiskt uttryck)
-- Headings: Libre Baskerville 700 / Space Grotesk 700
-- Body Text: Inter 400, 16px, line-height 1.8 (extra generöst radavstånd)
-- Metrics & Data: DM Mono 500 (för laddtid 0.3s, 100/100 Speed, HTTPS)
-- Captions & Labels: Inter 500, 12px uppercase, tracking 0.08em
+## ✒️ Typography (Anti-Slop Strict)
+- Display Hero Statement: Fraunces (700 Italic, tracking -0.03em) – Ståtlig, redaktionell och omisskännlig.
+- Headings & Subheadings: Space Grotesk (700, uppercase/sentence-case tracking -0.02em).
+- Body Text: Outfit (400, line-height 1.7) – Extremt lättläst och luftig.
+- Data / Metrics: JetBrains Mono (500, tabular-nums) – För mätdata, laddtid och SSL.
 
-## Spacing & Geometry Rules (Anti-Slop Strict)
-- Hero Padding: 140px vertical (generöst med luft)
-- Section Padding: 100px vertical
-- Radius System: 0px (Skarpa hörn – trycksaker har inga rundade hörn!)
-- Box Rule: FÖRBUD mot alla rundade kort och lådor! Separation sker enbart via vertikala/horisontella 1px hårlinjer (#D4C8B8) och typografiska kontraster.
-- Hairline Dividers: 1px solid #D4C8B8 mellan sektioner och kolumner.
-
-## Buttons (Editorial Tactile)
-- Primary Button: Skarp 0px hörn. Genomskinlig bakgrund med 1px solid Ink Walnut (#1A1714) ram. Vid hover fylls knappen mjukt med Ink Walnut (#1A1714) från mitten och texten inverteras till pappersvit (#FAF7F2). Känns som bläck som sugs in i papper.
-- Secondary CTA: Deep Walnut (#1A1714) bakgrund, Linen text, 0px radius.
-
-## Signature Feature Component
-"The Editorial Transformation Index":
-- En 2-kolumners tidningsinramning:
-  - Vänster: Gigantisk kursiv Fraunces-rubrik om 100/100 Speed och SSL.
-  - Höger: En ren vertikal lista över branscher (Hantverkare, Frisör, Restaurang) med klickbara prototyplänkar och levande mätdata i DM Mono font.
+## 🚫 STRICT NEGATIVE GUARDRAILS (FORBIDDEN)
+1. BANNED: Medium blue buttons (#2563EB / #3B82F6).
+2. BANNED: Identical 3-column equal card grids.
+3. BANNED: Grey wireframe placeholder lines in hero/demos. Render REAL mini-website mockups with actual content, green SSL badges, and live speed scores.
+4. BANNED: Generic CTA buttons ("Get Started", "Learn More").
