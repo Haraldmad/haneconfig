@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: theme("colors.warm-cream");
+    color: theme("colors.ink");
+    overflow-x: hidden;
+    font-family: theme("fontFamily.body-tight");
+  }
+  h1, h2, h3, .font-soft-serif {
+    font-family: theme("fontFamily.soft-serif");
+  }
+  .font-cormorant {
+    font-family: theme("fontFamily.cormorant");
+  }
+}
