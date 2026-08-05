@@ -1,45 +1,44 @@
-# Novo Studio – Design Concept 1 (DESIGN.md - webarchitect dark-luxury)
+# Novo Studio – Anti-Slop Design System (DESIGN.md)
 
-**Framework:** Stitch Web Architect Framework (preset: `dark-luxury`)  
-**Karaktär:** Djup natt, exklusiv brons/champagne-accent, krispiga 1px-linjer, taktila knappar med fysiskt djup, noll AI-slop.
-
----
-
-## 🎨 Designfilosofi (webarchitect)
-Inga platta generiska AI-ytor eller runda 8px-standardknappar. Novo Studio byggs som en exklusiv skandinavisk mission control-studio för företagare som vill ha kvalitet i varje pixel.
+**Framework:** Stitch Web Architect Framework (preset: `minimal-editorial` / `signal-system`)  
+**Anti-Slop Directives:** Förbjuder uttryckligen alla 12 slop-mönster (inga blå standardknappar, inga identiska 3-kortsgrid, inga grå wireframe-boxar, inga runda 8px-standardhörn).
 
 ---
 
-## 🎨 Colors (Design Tokens)
-- **Background Primary:** `#09090B` (Obsidian Void)
-- **Surface:** `#141417` (Dark Slate Card)
-- **Surface Raised:** `#1F1F24` (Elevated Surface)
-- **Text Primary:** `#FAF8F5` (Ivory Off-White)
-- **Text Secondary:** `#8B8B93` (Ash Gray)
-- **Accent Primary:** `#C9A84C` (Champagne Bronze – knapp och fokus)
-- **Accent Hover:** `#D4B760` (Champagne Glow)
-- **Accent Dim:** `rgba(201, 168, 76, 0.08)`
-- **Accent Trust / Security:** `#2DD4A0` (Mint Green – SSL & Google Speed)
-- **Border:** `#2A2A35` (1px Crisp Hairline)
-- **Border Active:** `rgba(201, 168, 76, 0.30)`
+## 🎨 Identity & Vibe
+Novo Studio är en **krispig, kompromisslös skandinavisk tech- och designstudio**. 
+Designen har karaktär som en högklassig arkitektutställning: generöst med whitespace, djup typografisk kontrast, asymmetrisk bento-layout och taktila komponenter.
+
+---
+
+## 🎨 Color System (Design Tokens)
+- **Background Primary:** `#F4F2EC` (Warm Nordic Paper / Off-White – ALDRIG ren vit eller tråkig ljusgrå)
+- **Surface Card:** `#FFFFFF` (Pure White Contrast Panel)
+- **Surface Dark Accent:** `#121316` (Deep Ink Black – för asymmetriska färgblock)
+- **Text Primary:** `#121316` (Deep Ink Black – maximal typografisk skärpa)
+- **Text Secondary:** `#575962` (Muted Charcoal Slate)
+- **Accent Primary (Action):** `#D946EF` / `#F97316` (Electric Terracotta / Warm Vermilion – ALDRIG standardblå)
+- **Accent Trust / Security:** `#059669` (Emerald Green – för SSL & 100/100 Google Speed)
+- **Border:** `#D8D5CB` (1.5px Solid Architectural Linework)
 
 ---
 
 ## ✒️ Typography (Anti-Slop Strict)
-- **Headings:** `Plus Jakarta Sans` (600 / 800, tracking -0.02em)
-- **Display Statement:** `Playfair Display` (400 italic – använd endast i Hero-rubrik)
-- **Body:** `Outfit` (400, line-height 1.6)
-- **Data / Metrics:** `JetBrains Mono` (500, tabular-nums – för 100/100, SSL A+, <0.2s)
-- **Labels:** `Plus Jakarta Sans` (600, 11px uppercase, tracking 0.08em)
+- **Display Hero Statement:** `Fraunces` / `Bricolage Grotesque` (700 Italic / Bold, tracking -0.03em) – Ståtlig, redaktionell och omisskännlig.
+- **Headings & Subheadings:** `Space Grotesk` (700, uppercase/sentence-case tracking -0.02em).
+- **Body Text:** `Outfit` (400, line-height 1.7) – Extremt lättläst och luftig.
+- **Data / Metrics:** `JetBrains Mono` (500, tabular-nums) – För mätdata, laddtid och SSL.
 
 ---
 
-## 🚀 Tactile Buttons & Component Rules (webarchitect)
-- **Primary Button:** Champagne #C9A84C bakgrund, Obsidian #09090B text. 1px inset top-highlight (white 15%), bottom shadow 0 2px 0 #A08535. Vid hover: knappen lyfter (translateY -1px) med champagne glow `0 0 20px rgba(201,168,76,0.2)`. Radius: 8px.
-- **Cards:** Background `#141417`, border 1px `#2A2A35`, radius 12px. Inga tunga skuggor i mörkt läge – separation sker via linjer och kontraster.
-- **Signature Feature:** "Mission Control Audit Card" i Herosektionen med tre levande indikatorer (100/100 Google Speed, 🔒 SSL A+ HTTPS, < 0.2s svarstid).
+## 🚫 STRIKT ANTI-SLOP REGLER (Måste följas)
+1. **FÖRBUD mot blå standardknappar:** Primärknappar har 1.5px solid svart ram (`#121316`) med 4px offset-skugga ELLER djupsvart bakgrund med krispig vit text och 1px inset highlight.
+2. **FÖRBUD mot identiska 3-kort:** Använd asymmetrisk Bento Grid där korten har OLIKA storlekar, färger och innehållstyper (ett mörkt kort, ett stort sifferkort, ett bildkort, ett mätarkort).
+3. **FÖRBUD mot grå wireframe-boxar:** Inga tomma grå rektanglar i demo-boxen! Visa en RIKTIG, krispig miniatyr av en färdig hemsida för en hantverkare med klickbar ring-knapp, grönt SSL-märke och animerad 100/100-mätare.
+4. **FÖRBUD mot generiska knappar:** Använd explicita handlingsknappar: *"Se din färdiga prototyp gratis"* eller *"Bygg mitt kostnadsfria förslag"*.
 
 ---
 
-## 📐 Bento Grid Layout (webarchitect)
-Asymmetrisk 12-kolumners Bento Grid med 6 jämförelsekort som förklarar alla fördelar med Novo Studio vs gamla utdaterade hemsidor.
+## 🚀 Signature Component (The Live Transformation Widget)
+Herosektionen domineras av en **Live Transformation Widget**:
+- En interaktiv före/efter-jämförelse som visar skillnaden mellan en trög 6-sekunders WordPress-sajt och Novo Studios blixtsnabba 0.3s Jamstack-sajt med inbyggt SSL-certifikat.

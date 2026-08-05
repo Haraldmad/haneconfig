@@ -1,50 +1,44 @@
-# Novo Studio – Design System (DESIGN.md - webarchitect nordic-showcase)
+# Novo Studio – Anti-Slop Design System (DESIGN.md)
 
-**Framework:** Stitch Web Architect Framework (preset: `saas-clean` / `nordic-showcase`)  
-**Karaktär:** Ljus, skandinavisk, krispig zinc, grafit-kontrast, elektrisk nordisk blå & bärnsten, levande showcase-komponenter, noll AI-slop.
-
----
-
-## 🎨 Designfilosofi (webarchitect)
-Novo Studio är en ljus, krispig och skandinavisk showcase-sajt. Den visar inte bara ord – den **visar i realtid vad du är kapabel att bygga åt kunden**. 
-Designen har en ren krämvit/zinkbakgrund (`#FAF9F6`), djup grafitgrå typografi (`#18181B`) och krispiga linjer som för tankarna till en arkitektstudio.
+**Framework:** Stitch Web Architect Framework (preset: `minimal-editorial` / `signal-system`)  
+**Anti-Slop Directives:** Förbjuder uttryckligen alla 12 slop-mönster (inga blå standardknappar, inga identiska 3-kortsgrid, inga grå wireframe-boxar, inga runda 8px-standardhörn).
 
 ---
 
-## 🎨 Colors (Design Tokens)
-- **Background Primary:** `#FAF9F6` (Nordic Pure Zinc / Off-White)
-- **Surface / Cards:** `#FFFFFF` (Crisp Pure White Card)
-- **Surface Secondary:** `#F1F5F9` (Subtle Slate Tint)
-- **Text Primary:** `#18181B` (Deep Graphite Black – maximal läsbarhet)
-- **Text Secondary:** `#52525B` (Zinc Gray – brödtext och detaljer)
-- **Accent Primary:** `#2563EB` (Electric Nordic Blue – primärknappar och fokus)
-- **Accent Soft:** `#EFF6FF` (Soft Blue Tint)
-- **Accent Trust / Security:** `#059669` (Emerald Green – SSL-certifikat & 100/100 Google Speed)
-- **Accent Warm:** `#D97706` (Amber Accent – för CTA och utvalda mätpunkter)
-- **Border:** `#E4E4E7` (1px Crisp Hairline Divider)
-- **Border Active:** `#2563EB` (Focus Outline)
+## 🎨 Identity & Vibe
+Novo Studio är en **krispig, kompromisslös skandinavisk tech- och designstudio**. 
+Designen har karaktär som en högklassig arkitektutställning: generöst med whitespace, djup typografisk kontrast, asymmetrisk bento-layout och taktila komponenter.
+
+---
+
+## 🎨 Color System (Design Tokens)
+- **Background Primary:** `#F4F2EC` (Warm Nordic Paper / Off-White – ALDRIG ren vit eller tråkig ljusgrå)
+- **Surface Card:** `#FFFFFF` (Pure White Contrast Panel)
+- **Surface Dark Accent:** `#121316` (Deep Ink Black – för asymmetriska färgblock)
+- **Text Primary:** `#121316` (Deep Ink Black – maximal typografisk skärpa)
+- **Text Secondary:** `#575962` (Muted Charcoal Slate)
+- **Accent Primary (Action):** `#D946EF` / `#F97316` (Electric Terracotta / Warm Vermilion – ALDRIG standardblå)
+- **Accent Trust / Security:** `#059669` (Emerald Green – för SSL & 100/100 Google Speed)
+- **Border:** `#D8D5CB` (1.5px Solid Architectural Linework)
 
 ---
 
 ## ✒️ Typography (Anti-Slop Strict)
-- **Headings:** `Bricolage Grotesque` / `Plus Jakarta Sans` (700 / 800, tracking -0.03em) – Skulptural, modern nordisk känsla.
-- **Body:** `Outfit` / `DM Sans` (400, line-height 1.6) – Krispig och extremt lättläst på mobiler.
-- **Data / Metrics:** `JetBrains Mono` (500, tabular-nums – för 100/100, SSL A+, <0.2s).
-- **Labels / Badges:** `Plus Jakarta Sans` (600, 11px uppercase, tracking 0.08em).
+- **Display Hero Statement:** `Fraunces` / `Bricolage Grotesque` (700 Italic / Bold, tracking -0.03em) – Ståtlig, redaktionell och omisskännlig.
+- **Headings & Subheadings:** `Space Grotesk` (700, uppercase/sentence-case tracking -0.02em).
+- **Body Text:** `Outfit` (400, line-height 1.7) – Extremt lättläst och luftig.
+- **Data / Metrics:** `JetBrains Mono` (500, tabular-nums) – För mätdata, laddtid och SSL.
 
 ---
 
-## 🚀 Signatur-element (The Living Showcase Card)
-Sidans huvudsakliga blickfång i Herosektionen:
-* **"Interactive Industry Showcase & Speed Audit":**  
-  Ett levande Bento-kort med tre flikar/exempel på branscher du bygger åt:
-  1. 🛠️ **Snickare & Hantverkare:** Visa snabbsida med 100/100 Speed, klickbar *"Ring direkt"*-knapp & SSL.
-  2. ✂️ **Frisör & Skönhet:** Visa snyggt bildgalleri, online-bokningslänk & blixtsnabb mobilvy.
-  3. 🍽️ **Restaurang & Café:** Visa digital meny, öppettider & HTTPS-säkerhet.
-* **Live Speed Indicator:** En animerad mätare som visar att alla dina kundsidor laddar på **0,3 sekunder** och har **100/100 i Google Lighthouse**.
+## 🚫 STRIKT ANTI-SLOP REGLER (Måste följas)
+1. **FÖRBUD mot blå standardknappar:** Primärknappar har 1.5px solid svart ram (`#121316`) med 4px offset-skugga ELLER djupsvart bakgrund med krispig vit text och 1px inset highlight.
+2. **FÖRBUD mot identiska 3-kort:** Använd asymmetrisk Bento Grid där korten har OLIKA storlekar, färger och innehållstyper (ett mörkt kort, ett stort sifferkort, ett bildkort, ett mätarkort).
+3. **FÖRBUD mot grå wireframe-boxar:** Inga tomma grå rektanglar i demo-boxen! Visa en RIKTIG, krispig miniatyr av en färdig hemsida för en hantverkare med klickbar ring-knapp, grönt SSL-märke och animerad 100/100-mätare.
+4. **FÖRBUD mot generiska knappar:** Använd explicita handlingsknappar: *"Se din färdiga prototyp gratis"* eller *"Bygg mitt kostnadsfria förslag"*.
 
 ---
 
-## 📐 Bento Grid Layout & Taktila Knappar (webarchitect)
-- **Primary Button:** Electric Blue `#2563EB` bakgrund, White text. 1px inset top-highlight (`rgba(255,255,255,0.2)`), bottom shadow `0 2px 0 #1D4ED8`. Vid hover: lyfter (translateY -1px) med subtle blue glow `0 4px 14px rgba(37,99,235,0.25)`. Radius: 10px.
-- **Bento Grid:** 6 krispiga vita kort med 1px hairline border (`#E4E4E7`) som lyfter fram varför företaget ska välja Novo Studio (Blixtsnabb laddtid, Gratis SSL, Teknisk SEO, 100% Managed Service, Inga 30k engångsavgifter, 3m provtid).
+## 🚀 Signature Component (The Live Transformation Widget)
+Herosektionen domineras av en **Live Transformation Widget**:
+- En interaktiv före/efter-jämförelse som visar skillnaden mellan en trög 6-sekunders WordPress-sajt och Novo Studios blixtsnabba 0.3s Jamstack-sajt med inbyggt SSL-certifikat.
