@@ -1,38 +1,44 @@
-# DESIGN.md — Novo Studio (webarchitect Studio Archetype)
+# DESIGN.md — Novo Studio (Template 1: Organic Tech)
 
-## Brand & Identity
+## Brand
 - Name: Novo Studio (novostudio.se)
-- Identity: Skandinavisk WaaS- och designstudio. Arkitektonisk krispighet, redaktionell typografi och levande interaktiva branschexempel.
-- Personality: Självsäker, transparent, krispig, högpresterande.
-- Tone: "Value First" – Vi visar vad du får gratis innan avtal.
+- Identity: Klinisk precision möter varm skandinavisk minimalism. En exklusiv WaaS-studio designad med tidningskänsla och organisk rymd.
+- Personality: Intelligent, grundad, tyst exklusiv, högpresterande.
+- Tone: Värdeskapande, rak, professionell ("Value First").
 
 ## Colors
-- Background Primary: #FAF9F6 (Nordic Pure Off-White / Zinc)
-- Surface Card: #FFFFFF (Crisp Pure White Card)
-- Surface Dark Accent: #121316 (Deep Ink Black – för asymmetrisk kontrast)
-- Text Primary: #121316 (Deep Ink Black – maximal läsbarhet)
-- Text Secondary: #52525B (Muted Zinc Slate)
-- Accent Primary (Action): #F97316 (Electric Terracotta / Warm Vermilion – knappar och CTA)
-- Accent Hover: #EA580C (Terracotta Dark)
-- Accent Security & Trust: #059669 (Emerald Green – för SSL-certifikat & Google Speed 100/100)
-- Border: #D8D5CB (1.5px Solid Architectural Linework)
+- Background: Cream #FAF8F5 (Varm krämvit – ALDRIG ren vit eller tråkig AI-grå)
+- Surface: Crisp White #FFFFFF
+- Surface Dark: Charcoal #16161A (för kontrastsidor)
+- Text Primary: Charcoal Ink #16161A
+- Text Secondary: Muted Stone #64646E
+- Text on Dark: Cream #FAF8F5
+- Accent Primary (Action): Moss Green #2E4036 (knappar och klickbara element)
+- Accent Hover: Moss Light #3D5548
+- Accent Secondary: Clay Terracotta #CC5833 (för unika utmärkelser & priser)
+- Accent Trust / Security: Emerald Green #059669 (för SSL A+ & Google Speed 100/100)
+- Border: Linen Divider #D4CFC6 (1px solid)
 
-## Typography (Anti-Slop Strict)
-- Display Hero Headline: Bricolage Grotesque / Fraunces (800 Bold / Italic, tracking -0.03em)
-- Headings: Space Grotesk 700 (uppercase / sentence-case)
-- Body Text: Outfit 400, 16px, line-height 1.7
-- Data & Metrics: JetBrains Mono 500 (för laddtid <0.3s, 100/100 Speed, HTTPS)
-- Labels & Badges: Plus Jakarta Sans 600, 11px uppercase, tracking 0.08em
+## Typography
+- Headings: Plus Jakarta Sans 700, tracking -0.02em
+- Display: Cormorant Garamond 400 italic (används för Hero-rubrik och dramatiska utrop — 2.5x body size)
+- Body: Outfit 400, 16px, line-height 1.7
+- Data & Metrics: IBM Plex Mono 400, 14px, tabular-nums (för laddtid <0.3s, SSL A+, 100/100 Speed)
+- Labels: Outfit 500, 12px, uppercase, tracking 0.06em, Muted Stone color
 
-## Tactile Buttons & Micro-Badges
-- Primary Button: Deep Ink Black #121316 bakgrund med vit text ELLER Electric Terracotta #F97316 med 4px offset drop shadow (#121316). 1px inset top-highlight (rgba(255,255,255,0.2)). Vid hover: knappen lyfter 1px.
-- Performance Micro-Badges: Subtila, eleganta piller i Emerald Green (#059669) med en 6px glowing dot (`● HTTPS Active`, `100/100 Lighthouse`, `< 0.3s Svarstid`). Inga råa emojirader eller textstörningar.
-- Cards: Background #FFFFFF, border 1.5px solid #D8D5CB, radius 14px.
+## Spacing & Radius System
+- Hero Padding: 120px vertical
+- Section Padding: 80px vertical (ljusa sektioner), 100px vertical (mörka sektioner)
+- Card Padding: 28px
+- Grid Gap: 24px
+- Radius: Cards 20px (generös organisk feel), Buttons 12px, Input fields 10px, Badges 999px (full pill)
+- Hairline Border: 1px solid #D4CFC6
 
-## Signature Feature Component
-"The Living Industry Showcase & Performance Bar":
-- En 3-kolumners "Performance Ribbon" integrerad under Hero-rubriken med krispig typografi (JetBrains Mono) och minimalistiska linjer:
-  1. 🔒 **SSL-Säkerhet:** `● HTTPS Active / A+ Security` (Emerald Green indicator)
-  2. ⚡ **Google Speed:** `100/100 Performance Score`
-  3. 🚀 **Svarstid:** `< 0.3s Global Edge Load`
-- Herosektionen har ett krispigt showcase-kort med riktiga miniatyrer för hantverkare, frisörer och restauranger.
+## Tactile Buttons
+- Primary Button: Moss Green #2E4036 bg, Cream #FAF8F5 text. Inner highlight: 1px inset top border (rgba(255,255,255,0.15)). Bottom shadow: 0 2px 0 #1A2D22. Vid hover: knappen lyfter 1px (translateY -1px), skuggan förlängs till 3px.
+- Secondary Button: Transparent bg, 1px Moss Green border, Moss text.
+- All Buttons: 12px radius, 14px 28px padding, Plus Jakarta Sans 600.
+
+## Anti-Slop Strict Rules
+- BANNED: Blå standardknappar (#2563EB), identiska 3-kortsgalleri, tomma grå wireframe-streck, generisk "Get Started"-text.
+- MANDATORY: Explicita handlingsknappar ("Se din färdiga prototyp gratis"), 20px rundade kort med 1px hårlinjer (#D4CFC6), Cormorant Garamond kursiv i Hero.

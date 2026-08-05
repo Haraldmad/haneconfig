@@ -1,46 +1,51 @@
-# Novo Studio – Split-Screen Comparison Stitch Prompt
+# Novo Studio – Stitch Prompt (Template 1: Organic Tech)
 
 ```markdown
-Design a revolutionary 50/50 Split-Screen comparison landing page for "Novo Studio" (novostudio.se) using Stitch Web Architect framework.
+Design an expansive, high-craft Scandinavian Web-as-a-Service (WaaS) studio landing page for "Novo Studio" (novostudio.se) using Template 1 (Organic Tech).
 
-CORE CONCEPT:
-Instead of standard cards or grids, the page is built as a dramatic vertical 50/50 split comparison between "Det Gamla Sättet" (Traditional Agency / Old Slow Site) and "Novo Studio-Sättet" (Blixtsnabb WaaS Studio).
+STRICT ANTI-SLOP & STYLING DIRECTIVES (MANDATORY):
+- BANNED: Medium blue buttons (#2563EB), identical 3-card equal grids, fake grey wireframe placeholder lines, generic "Get Started" buttons, pure white/flat grey backgrounds.
+- Background MUST be Warm Cream (#FAF8F5). Text MUST be Charcoal Ink (#16161A). Accent MUST be Moss Green (#2E4036) or Clay Terracotta (#CC5833).
+- Primary Buttons MUST be Moss Green (#2E4036 bg, Cream text, 12px radius) with tactile depth (1px inset top-highlight, 2px bottom shadow, translateY -1px hover lift).
+- Cards MUST have 20px organic border-radius and 1px solid hairline borders (#D4CFC6).
 
-STRICT STYLING DIRECTIVES:
-- NO 3-column card grids, NO bento boxes, NO generic blue buttons (#2563EB), NO fake grey wireframe lines.
-- Left Column Background: Muted Slate Charcoal (#1C1D21) with ash grey text (#94A3B8). Represents legacy slow websites.
-- Right Column Background: Warm Nordic Paper (#FAF9F6) with Deep Ink Black text (#121316) and Electric Terracotta (#F97316) CTA buttons. Represents Novo Studio.
-- Typography: Display headline in Bricolage Grotesque / Fraunces (700 Italic), Headings in Space Grotesk (700), Metrics in JetBrains Mono.
+Typography Hierarchy:
+- Hero Headline Display: Cormorant Garamond (400 Italic, 3.5rem+ font size — dramatic, editorial emphasis).
+- Section Headings: Plus Jakarta Sans (700 Bold).
+- Body Text: Outfit (400 Regular, 16px, line-height 1.7).
+- Tech Data & Metrics: IBM Plex Mono (400 Regular, tabular-nums).
 
-LAYOUT & STRUCTURE:
+LAYOUT & KEY SECTIONS:
 
 1. Header Bar:
-   - Full-width header spanning both columns. Logo "Novo Studio" with a Terracotta dot. Right: CTA "Se min gratis prototyp".
+   - Sticky pill-shaped container, centered logo "Novo Studio" in Plus Jakarta Sans 800 with a small Clay Terracotta dot (#CC5833).
+   - Right: Nav links (Erbjudande, Fördelar, Pris) + Moss Green CTA button "Se gratis prototyp" (12px radius, tactile depth).
 
-2. Hero Split-Screen (50/50 Dual Canvas):
-   - LEFT SIDE ("Det Gamla Sättet - Traditional Agency"):
-     - Badge: ❌ TRADITIONELL WEBBBYRÅ
-     - Headline: "30 000 kr i startavgift & 4.8 sekunder laddtid."
-     - Legacy Card Mockup: Old slow WordPress layout with red warning indicator (❌ Inget SSL / Osäker, 22/100 Speed score, 500 kr/timme för minsta ändring).
-   
-   - RIGHT SIDE ("Novo Studio - Det Nya Sättet"):
-     - Badge: ✨ NOVO STUDIO WAAS
-     - Headline: "0 kr i startavgift & 0.3 sekunder laddtid."
-     - Live Prototype Card: Crisp modern craftsman site mockup with glowing green SSL indicator (🔒 HTTPS Active) and 100/100 Lighthouse score.
-     - Tactile Primary CTA Button: "Se din färdiga prototyp gratis" in Terracotta (#F97316) with 4px drop shadow (shadow-[4px_4px_0px_0px_#121316]).
+2. Hero Section (Spacious Centered Broad-Canvas):
+   - Display Statement (Cormorant Garamond italic): "Din nya hemsida – gratis prototyp innan du bestämmer dig."
+   - Subtitle (Outfit 400, #64646E): "Blixtsnabb laddtid, inkluderat SSL-certifikat, teknisk SEO och fria ändringar för 500 kr/månad."
+   - Performance Ribbon (3 minimal hairline pills in IBM Plex Mono with Emerald Green #059669 indicators):
+     - 🔒 `● HTTPS Active` (glowing green dot)
+     - ⚡ `100/100 Google Speed`
+     - 🚀 `< 0.3s Load Time`
+   - Primary CTA Button: "Se din färdiga prototyp gratis" in Moss Green (#2E4036 bg, 12px radius, 0 2px 0 #1A2D22 shadow).
+   - Trust Badge: "✓ 0 kr i startavgift • 3 månaders risktrygg provtid."
+   - Real Prototype Showcase Artifact (20px radius card, 1px #D4CFC6 border): A clean preview of a live craftsman site with green SSL badge and 100/100 Google Speed score.
 
-3. Dual-Pane Feature Comparison Rows (5 Direct Split Rows):
-   - Row 1 (Startavgift): Left = "30 000 kr i förskott" vs Right = "0 kr startavgift (3m provtid)".
-   - Row 2 (Laddtid & Speed): Left = "4.8s (Tappar 50% av alla besökare)" vs Right = "< 0.3s (100/100 Google Speed)".
-   - Row 3 (Säkerhet & SSL): Left = "Varning i webbläsaren / Dyr SSL-licens" vs Right = "Inkluderat SSL (HTTPS) från dag 1".
-   - Row 4 (Ändringar & Drift): Left = "Logga in i krångligt CMS eller betala 1 200 kr/h" vs Right = "100% Managed Service – Skicka ett SMS så fixar vi det".
-   - Row 5 (Månadskostnad): Left = "Osystematiskt & osäkert" vs Right = "Fast trygg kostnad 500 kr/mån".
+3. Functional Artifact Value Cards (6 Organic Cards with 20px radius, 1px #D4CFC6 borders):
+   - Card 1: Blixtsnabb Laddtid (< 0.3s) med levande IBM Plex Mono prestandamätare (100/100).
+   - Card 2 (Dark Charcoal Panel #16161A bg, Cream text, 20px radius): 100% Managed Service – "Skicka ett SMS så ändrar vi bilder och text åt dig inom 24h. Inget krångel."
+   - Card 3: Gratis SSL-Certifikat (HTTPS) – Alltid inkluderat grönt säkerhetsmärke (#059669).
+   - Card 4: Teknisk SEO-optimering för lokal Google-synlighet.
+   - Card 5: 0 kr i startavgift vs 30 000 kr hos traditionell byrå.
+   - Card 6: 3 Månaders Provtid – Risktrygg provtid (1 000 kr/mån provtid ➔ 500 kr/mån ordinarie).
 
-4. Pricing & Lead Capture Section:
-   - Single high-contrast White Panel (#FFFFFF) spanning the bottom:
-     - Header: "Redo att se din nya sajt?"
-     - Price: "1 000 kr / mån" (Månad 1–3) ➔ "500 kr / mån" (Från månad 4).
-     - 3-field form: Företagsnamn, Stad/Bransch, Mail/Telefon. Button: "Skapa mitt gratis förslag".
+4. High-Contrast Pricing Panel & Lead Capture Form:
+   - Crisp White Panel (#FFFFFF bg, 20px radius, 1px solid #D4CFC6 border):
+     - Title: "Novo Studio Abonnemang"
+     - Price breakdown: "1 000 kr / mån" (Provtid Månad 1–3) ➔ "500 kr / mån" (Från månad 4).
+     - Included Checklist: Hosting, SSL-Certifikat, Teknisk SEO, Övervakning & Drift, Fria innehållsändringar.
+     - 3-field Lead Form: Företagsnamn, Stad/Bransch, Mail/Telefon. Button: "Skapa mitt gratis förslag" (Moss Green #2E4036 bg).
 
-Execution: High-contrast split screen, crisp 1.5px hairline dividers, responsive stacking on mobile.
+Execution Quality: Generous whitespace, organic 20px radius cards, Cormorant Garamond italic display statements, 1px hairline dividers (#D4CFC6), tactile Moss Green buttons, responsive down to mobile.
 ```
