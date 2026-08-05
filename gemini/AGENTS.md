@@ -13,7 +13,6 @@
    - Claude Code läser automatiskt in alla sina regler, skills och MCP-servrar nativt från `~/.claude.json` och `~/.claude/skills/`. Det behövs därför ingen initierings-prompt för att ladda Claude.
    - Generera endast en skräddarsydd GPACCG V8.0-prompt i markdown-kodblock när en specifik exekveringsuppgift ska lämnas över till Claude Code.
 
-
 5. **Design & Style Enforcement:**
    - Använd alltid färgkoder, typografi och spacing från DESIGN.md. Hitta inte på egna värden.
 
@@ -31,6 +30,9 @@
      3. Skapa `CLAUDE.md` i projektroten om den saknas.
      4. Automatiskt ställa in / rekommendera mappen som aktiv Workspace i Antigravity IDE ("Add Folder to Workspace") så koden direkt kan läsas och redigeras.
 
-
-
-
+9. **Core Trigger Keywords Directives:**
+   - `vibe`: Kör `vibe-extractor` (analysera stämning & 4-6 stödord).
+   - `stitch`: Kör `web-architect` (generera DESIGN.md & Stitch start-prompt, stöder `-preset`).
+   - `slop`: Kör `slop-detective` (Anti-slop audit 0-100%, identifiera fällor & ge korrigeringsprompt).
+   - `import-stitch`: Kör `import-stitch` (Auto-scaffolda projekt i `~/projekt/`, git init, assets, workspace).
+   - `haneconfig`: Kör `haneconfig-status` (instrumentpanel & systemstatus).

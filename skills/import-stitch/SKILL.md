@@ -1,6 +1,6 @@
 ---
 name: import-stitch
-description: Stitch Auto-Scaffolder & Project Importer (Triggers: import-stitch, stitch-import, scaffold-stitch). Converts Stitch HTML/React code into a complete, clean React/Vite/Tailwind project in ~/projekt/<projekt-namn>/ with DESIGN.md, CLAUDE.md, downloaded assets, and active workspace setup.
+description: Stitch Auto-Scaffolder & Project Importer (Triggers: import-stitch, stitch-import, scaffold-stitch). Converts Stitch HTML/React code into a complete, clean React/Vite/Tailwind project in ~/projekt/<projekt-namn>/ with git init, DESIGN.md, CLAUDE.md, downloaded assets, and active workspace setup.
 ---
 
 # Stitch Auto-Scaffolder & Project Importer
@@ -49,6 +49,11 @@ projekt-namn/
 - Kopiera in den standardiserade `CLAUDE.md`-mallen från haneconfig.
 - Generera en komplett `DESIGN.md` anpassad efter importerad kod.
 
-### Steg 5: Registrera Workspace
+### Steg 5: Automatisk Git Baseline Init (`git init`)
+- Kör terminalkommando i den nya mappen:
+  `git init; git add .; git commit -m "Initial baseline commit from haneconfig import-stitch"`
+- Detta garanterar att `anti-loop-rollback` har ett fungerande baseline-state från dag 1!
+
+### Steg 6: Registrera Workspace
 - Sätt/rekommendera den nyskapade projektmappen (`<hemkatalog>/projekt/<projekt-namn>/`) som aktiv Workspace i Antigravity IDE ("Add Folder to Workspace").
 - Ge bekräftelse till användaren med direktlänk till den nya mappen!
