@@ -1,48 +1,45 @@
-# Novo Studio – Design Concept 1 (DESIGN.md)
+# Novo Studio – Design Concept 1 (DESIGN.md - webarchitect dark-luxury)
 
-**Stil:** Obsidian Dark / Electric Sapphire Blue / Emerald Trust  
-**Målgrupp:** Skandinavisk high-performance WaaS-studio för småföretagare.
-
----
-
-## 🎯 Designfilosofi & Positionering
-Novo Studio positioneras som en exklusiv, blixtsnabb skandinavisk tech- och designstudio. 
-Designen är krispig, självsäker och modern med djup mörk obsidian-bakgrund, glassmorphism-detaljer och vibrerande accentfärger.
+**Framework:** Stitch Web Architect Framework (preset: `dark-luxury`)  
+**Karaktär:** Djup natt, exklusiv brons/champagne-accent, krispiga 1px-linjer, taktila knappar med fysiskt djup, noll AI-slop.
 
 ---
 
-## 🎨 Färgpalett (Design Tokens)
-- **Background Primary:** `#0B0F17` (Deep Obsidian Dark)
-- **Surface / Cards:** `#131927` (Elevated Slate Card)
-- **Surface Hover:** `#1E293B` (Interactive Surface)
-- **Accent Primary:** `#3B82F6` (Electric Sapphire Blue – knappar, CTA och fokus)
-- **Accent Glow:** `#60A5FA` (Soft Cyan-Blue Glow – skuggor och gradients)
-- **Accent Security & Trust:** `#10B981` (Emerald Green – SSL-certifikat, 100/100 Speed & förtroendemärken)
-- **Text Primary:** `#F9FAFB` (Crisp Off-White)
-- **Text Secondary:** `#9CA3AF` (Muted Slate Gray)
-- **Borders & Dividers:** `rgba(255, 255, 255, 0.08)` (Subtila hairline-kanter)
+## 🎨 Designfilosofi (webarchitect)
+Inga platta generiska AI-ytor eller runda 8px-standardknappar. Novo Studio byggs som en exklusiv skandinavisk mission control-studio för företagare som vill ha kvalitet i varje pixel.
 
 ---
 
-## ✒️ Typografi
-- **Display / Rubriker:** `Plus Jakarta Sans` (Bold 700 / ExtraBold 800) – Modern, studio-mässig
-- **Brödtext:** `Inter` (Regular 400 / Medium 500) – Krispig och extremt läsbar
-- **Badges & Data:** `JetBrains Mono` (Medium 500) – För sifferdata som 100/100, <0.2s, HTTPS
+## 🎨 Colors (Design Tokens)
+- **Background Primary:** `#09090B` (Obsidian Void)
+- **Surface:** `#141417` (Dark Slate Card)
+- **Surface Raised:** `#1F1F24` (Elevated Surface)
+- **Text Primary:** `#FAF8F5` (Ivory Off-White)
+- **Text Secondary:** `#8B8B93` (Ash Gray)
+- **Accent Primary:** `#C9A84C` (Champagne Bronze – knapp och fokus)
+- **Accent Hover:** `#D4B760` (Champagne Glow)
+- **Accent Dim:** `rgba(201, 168, 76, 0.08)`
+- **Accent Trust / Security:** `#2DD4A0` (Mint Green – SSL & Google Speed)
+- **Border:** `#2A2A35` (1px Crisp Hairline)
+- **Border Active:** `rgba(201, 168, 76, 0.30)`
 
 ---
 
-## 🚀 Signatur-element (Hero Feature)
-"Live Performance & Security Audit Card" i Herosektionen:
-- Mätare 1: ⚡ **Google Speed Index:** `100/100` (Grön mätar-badge)
-- Mätare 2: 🔒 **SSL-Säkerhet:** `A+ HTTPS Aktiv` (Emerald Green ikon)
-- Mätare 3: 🚀 **Svarstid:** `< 0.2 sekunder`
-- CTA-knapp: *"Be om ett gratis förslag"* med Electric Blue glow.
+## ✒️ Typography (Anti-Slop Strict)
+- **Headings:** `Plus Jakarta Sans` (600 / 800, tracking -0.02em)
+- **Display Statement:** `Playfair Display` (400 italic – använd endast i Hero-rubrik)
+- **Body:** `Outfit` (400, line-height 1.6)
+- **Data / Metrics:** `JetBrains Mono` (500, tabular-nums – för 100/100, SSL A+, <0.2s)
+- **Labels:** `Plus Jakarta Sans` (600, 11px uppercase, tracking 0.08em)
 
 ---
 
-## 📐 Komponenter & Struktur
-1. **Header / Nav:** Semi-transparent glassmorphism-header med logotyp Novo Studio och CTA-knapp.
-2. **Hero Section:** Rubrik *"Din nya hemsida – gratis prototyp innan du bestämmer dig."* med signatur-kortet.
-3. **Jämförelsesektion:** 6 kort som visar varför man ska byta från en gammal sajt (Blixtsnabb laddtid, Inkluderat SSL, Teknisk SEO, 100% Managed, Inga engångsavgifter på 30k, 3 mån provtid).
-4. **Prissektion:** 3 månaders provtid (1 000 kr/mån) ➔ Ordinarie (500 kr/mån) med funktionstaggning.
-5. **Prototyp-Formulär:** Enkelt 3-fältsformulär (Företagsnamn, Stad/Bransch, Mail/Telefon).
+## 🚀 Tactile Buttons & Component Rules (webarchitect)
+- **Primary Button:** Champagne #C9A84C bakgrund, Obsidian #09090B text. 1px inset top-highlight (white 15%), bottom shadow 0 2px 0 #A08535. Vid hover: knappen lyfter (translateY -1px) med champagne glow `0 0 20px rgba(201,168,76,0.2)`. Radius: 8px.
+- **Cards:** Background `#141417`, border 1px `#2A2A35`, radius 12px. Inga tunga skuggor i mörkt läge – separation sker via linjer och kontraster.
+- **Signature Feature:** "Mission Control Audit Card" i Herosektionen med tre levande indikatorer (100/100 Google Speed, 🔒 SSL A+ HTTPS, < 0.2s svarstid).
+
+---
+
+## 📐 Bento Grid Layout (webarchitect)
+Asymmetrisk 12-kolumners Bento Grid med 6 jämförelsekort som förklarar alla fördelar med Novo Studio vs gamla utdaterade hemsidor.
