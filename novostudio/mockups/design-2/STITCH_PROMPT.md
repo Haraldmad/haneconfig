@@ -1,4 +1,4 @@
-# Novo Studio – Stitch Prompt (webarchitect nordic-showcase)
+# Novo Studio – Stitch Prompt Design 2 (webarchitect nordic-showcase)
 
 ```markdown
 Design a clean, bright Scandinavian Web-as-a-Service (WaaS) studio landing page for "Novo Studio" (novostudio.se) using the Stitch Web Architect framework (preset: saas-clean / nordic-showcase).

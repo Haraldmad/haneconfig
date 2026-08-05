@@ -1,4 +1,4 @@
-# Novo Studio – Design System (DESIGN.md - webarchitect nordic-showcase)
+# Novo Studio – Design Concept 2 (DESIGN.md - webarchitect nordic-showcase)
 
 **Framework:** Stitch Web Architect Framework (preset: `saas-clean` / `nordic-showcase`)  
 **Karaktär:** Ljus, skandinavisk, krispig zinc, grafit-kontrast, elektrisk nordisk blå & bärnsten, levande showcase-komponenter, noll AI-slop.
