@@ -4,7 +4,7 @@
 Design an anti-slop, high-craft Scandinavian Web-as-a-Service (WaaS) studio landing page for "Novo Studio" (novostudio.se) using the Stitch Web Architect framework (Studio Archetype).
 
 STRICT ANTI-SLOP CONSTRAINTS (MANDATORY):
-- BANNED: Medium blue buttons (#2563EB), identical 3-card equal grids, fake grey wireframe placeholder lines, generic "Get Started" buttons, pure white/flat grey backgrounds.
+- BANNED: Medium blue buttons (#2563EB), identical 3-card equal grids, fake grey wireframe placeholder lines, generic "Get Started" buttons, inline raw emoji text strings ("🟢 SSL-Säkrad | ⚡ Speed").
 - Background MUST be Warm Nordic Paper / Zinc (#FAF9F6). Text MUST be Deep Ink Black (#121316). Accent MUST be Electric Terracotta (#F97316) or Deep Ink Black.
 - Primary Buttons MUST have physical depth (4px offset shadow or 1px inset highlight, translateY -1px hover lift).
 - Layout MUST use an ASYMMETRIC BENTO GRID with varying card sizes, 1.5px hairline borders (#D8D5CB), and one dark graphite contrast card.
@@ -20,16 +20,19 @@ Key Layout Sections:
    - Left: Logo "Novo Studio" in Space Grotesk 800 with a small terracotta dot.
    - Right: Nav links (Erbjudande, Fördelar, Pris) + Deep Ink Black CTA button "Se gratis prototyp".
 
-2. Hero Section (Split Layout):
+2. Hero Section (Split Layout + Elegant Performance Ribbon):
    - Left Column:
      - Dramatic Bricolage Grotesque Headline: "Vi bygger din nya hemsida gratis i förväg – se potentialen."
      - Subheadline: "Blixtsnabb laddtid, inkluderat SSL-certifikat, teknisk SEO och fria ändringar för 500 kr/månad."
+     - Elegant Performance Ribbon (3 minimal micro-badges in JetBrains Mono with 1px hairline borders):
+       - 🔒 `● HTTPS Active` (Emerald Green glowing dot)
+       - ⚡ `100/100 Google Speed`
+       - 🚀 `< 0.3s Load Time`
      - Primary CTA Button: "Se din färdiga prototyp gratis" in Electric Terracotta (#F97316) with 4px offset shadow.
      - Trust Badge: "✓ 0 kr i startavgift • 3 månaders risktrygg provtid."
    - Right Column: "Living Industry Showcase Card"
      - Render a REAL styled mini-card showing a live craftsman site preview (Svenssons Bygg AB):
-       - Top Bar: 🟢 SSL-Säkrad (HTTPS) | ⚡ Speed: 0.3s | 100/100 Lighthouse score.
-       - Mini Preview: Phone/Desktop card with craftsman photo, headline, and clickable "Ring Nu" button.
+       - Mini Desktop/Mobile Card: Photo of craftsman, clear headline, and a prominent clickable "Ring Nu" button.
 
 3. Asymmetric Bento Grid (6 Advantage Cards):
    - Card 1 (Large 2-span): "Blixtsnabb Laddtid (< 0.3s)" with a live animated JetBrains Mono speed gauge (100/100).

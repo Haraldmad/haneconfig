@@ -24,17 +24,15 @@
 - Data & Metrics: JetBrains Mono 500 (för laddtid <0.3s, 100/100 Speed, HTTPS)
 - Labels & Badges: Plus Jakarta Sans 600, 11px uppercase, tracking 0.08em
 
-## Tactile Buttons & Radius Rules
+## Tactile Buttons & Micro-Badges
 - Primary Button: Deep Ink Black #121316 bakgrund med vit text ELLER Electric Terracotta #F97316 med 4px offset drop shadow (#121316). 1px inset top-highlight (rgba(255,255,255,0.2)). Vid hover: knappen lyfter 1px.
+- Performance Micro-Badges: Subtila, eleganta piller i Emerald Green (#059669) med en 6px glowing dot (`● HTTPS Active`, `100/100 Lighthouse`, `< 0.3s Svarstid`). Inga råa emojirader eller textstörningar.
 - Cards: Background #FFFFFF, border 1.5px solid #D8D5CB, radius 14px.
 
 ## Signature Feature Component
-"The Living Industry Showcase Card":
-- Herosektionen har ett 2-kolumners interaktivt showcase-kort som visar hur Novo Studio förändrar hemsidor för tre branscher:
-  1. 🛠️ Hantverkare (Svenssons Bygg AB): Klickbar "Ring Nu"-knapp, 100/100 Speed & SSL.
-  2. ✂️ Frisör (Salong Elegans): BokaDirekt-knapp & mobil gallerivy.
-  3. 🍽️ Restaurang (La Piazza): Digital meny & öppettider-widget.
-
-## Anti-Slop Strict Rules
-- BANNED: Blå standardknappar (#2563EB), identiska 3-kortsgrid, tomma grå wireframe-boxar, generisk "Get Started"-text.
-- MANDATORY: Explicita handlingsknappar ("Se din färdiga prototyp gratis"), asymmetrisk Bento Grid, 1.5px solid kantlinje.
+"The Living Industry Showcase & Performance Bar":
+- En 3-kolumners "Performance Ribbon" integrerad under Hero-rubriken med krispig typografi (JetBrains Mono) och minimalistiska linjer:
+  1. 🔒 **SSL-Säkerhet:** `● HTTPS Active / A+ Security` (Emerald Green indicator)
+  2. ⚡ **Google Speed:** `100/100 Performance Score`
+  3. 🚀 **Svarstid:** `< 0.3s Global Edge Load`
+- Herosektionen har ett krispigt showcase-kort med riktiga miniatyrer för hantverkare, frisörer och restauranger.
