@@ -1,4 +1,4 @@
-# Novo Studio – Hyper-Optimized Anti-Slop Stitch Prompt
+# Novo Studio – Stitch Prompt Design 1 (Hyper-Optimized)
 
 ```markdown
 Design a precision-engineered, ultra-crisp Scandinavian Web-as-a-Service (WaaS) landing page for "Novo Studio" (novostudio.se) using Stitch Web Architect framework. Zero fluff, high craft, maximum converting clarity.
@@ -29,11 +29,11 @@ LAYOUT & STRUCTURE BLUEPRINT:
    - Card 3: "Gratis SSL-Certifikat" – Permanent HTTPS security badge in Emerald Green.
    - Card 4: "Teknisk SEO" – Optimized for local Google search ranking.
    - Card 5: "Ingen Startavgift" – 0 kr upfront vs 30 000 kr traditional agency cost.
-   - Card 6: "3 Månaders Provtid" – Risk-free trial (1 000 kr/mo trial ➔ 500 kr/mo regular).
+   - Card 6: "3 Månaders Provtid" – Risk-free trial period (1 000 kr/mo trial ➔ 500 kr/mo regular).
 
 4. High-Contrast Pricing Card:
    - Crisp White Card (#FFFFFF) with 1.5px solid border (#D8D5CB):
-     - Header: "Novo Studio Abonnemang"
+     - Title: "Novo Studio Abonnemang"
      - Price: "1 000 kr / mån" (Provtid Månad 1–3) ➔ "500 kr / mån" (Från månad 4)
      - Included checklist: Hosting, SSL-Certifikat, Teknisk SEO, Övervakning & Drift, Fria ändringar.
      - CTA Button: "Skapa mitt gratis förslag".
