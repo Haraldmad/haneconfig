@@ -1,4 +1,4 @@
-# Novo Studio – Stitch Prompt (minimal-editorial)
+# Novo Studio – Stitch Prompt Design 2 (minimal-editorial)
 
 ```markdown
 Design an anti-slop, high-fashion Scandinavian Editorial Web-as-a-Service (WaaS) studio landing page for "Novo Studio" (novostudio.se) using the Stitch Web Architect framework (preset: minimal-editorial).
