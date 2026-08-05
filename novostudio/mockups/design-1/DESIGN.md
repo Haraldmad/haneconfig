@@ -1,4 +1,4 @@
-# DESIGN.md — Novo Studio (Template 1: Organic Tech)
+# Novo Studio – Design Concept 1 (Template 1: Organic Tech)
 
 ## Brand
 - Name: Novo Studio (novostudio.se)

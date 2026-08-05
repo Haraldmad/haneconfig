@@ -1,4 +1,4 @@
-# Novo Studio – Stitch Prompt (Template 1: Organic Tech)
+# Novo Studio – Stitch Prompt Design 1 (Template 1: Organic Tech)
 
 ```markdown
 Design an expansive, high-craft Scandinavian Web-as-a-Service (WaaS) studio landing page for "Novo Studio" (novostudio.se) using Template 1 (Organic Tech).
