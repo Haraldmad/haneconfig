@@ -1,21 +1,41 @@
-# haneconfig sync script
-Write-Host "Synkar haneconfig skills för Gemini och Claude..." -ForegroundColor Cyan
+# haneconfig unified sync script
+param (
+    [switch]$Pull
+)
 
 $geminiConfigDir = "$env:USERPROFILE\.gemini\config\skills"
 $claudeConfigDir = "$env:USERPROFILE\.claude\skills"
+$repoSkillsDir   = "$PSScriptRoot\skills"
 
-# Copy Gemini Skills
-if (Test-Path ".\gemini\skills") {
-    New-Item -ItemType Directory -Force -Path $geminiConfigDir | Out-Null
-    Copy-Item -Path ".\gemini\skills\*" -Destination $geminiConfigDir -Recurse -Force
-    Write-Host "[√] Synkade Gemini skills till $geminiConfigDir" -ForegroundColor Green
-}
+if ($Pull) {
+    Write-Host "Drar hem (Pull) skills från Gemini till haneconfig-repot..." -ForegroundColor Yellow
+    if (Test-Path $geminiConfigDir) {
+        New-Item -ItemType Directory -Force -Path $repoSkillsDir | Out-Null
+        Copy-Item -Path "$geminiConfigDir\*" -Destination $repoSkillsDir -Recurse -Force
+        Write-Host "[√] Skills hämtade till $repoSkillsDir" -ForegroundColor Green
+    }
+} else {
+    Write-Host "Synkar haneconfig skills till Gemini och Claude Code (Push)..." -ForegroundColor Cyan
+    
+    if (Test-Path $repoSkillsDir) {
+        # Sync to Gemini
+        New-Item -ItemType Directory -Force -Path $geminiConfigDir | Out-Null
+        Copy-Item -Path "$repoSkillsDir\*" -Destination $geminiConfigDir -Recurse -Force
+        Write-Host "[√] Synkade skills till $geminiConfigDir" -ForegroundColor Green
 
-# Copy Claude Skills
-if (Test-Path ".\claude\skills") {
-    New-Item -ItemType Directory -Force -Path $claudeConfigDir | Out-Null
-    Copy-Item -Path ".\claude\skills\*" -Destination $claudeConfigDir -Recurse -Force
-    Write-Host "[√] Synkade Claude skills till $claudeConfigDir" -ForegroundColor Green
+        # Sync to Claude Code
+        New-Item -ItemType Directory -Force -Path $claudeConfigDir | Out-Null
+        Copy-Item -Path "$repoSkillsDir\*" -Destination $claudeConfigDir -Recurse -Force
+        Write-Host "[√] Synkade skills till $claudeConfigDir" -ForegroundColor Green
+
+        # Backward compatibility sync inside repo
+        if (Test-Path "$PSScriptRoot\gemini\skills") {
+            Copy-Item -Path "$repoSkillsDir\*" -Destination "$PSScriptRoot\gemini\skills" -Recurse -Force | Out-Null
+        }
+        if (Test-Path "$PSScriptRoot\claude\skills") {
+            Copy-Item -Path "$repoSkillsDir\*" -Destination "$PSScriptRoot\claude\skills" -Recurse -Force | Out-Null
+        }
+    }
 }
 
 # Ensure Stitch MCP is registered in ~/.claude.json using gcloud ADC / system gcloud
