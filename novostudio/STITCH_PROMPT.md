@@ -1,56 +1,48 @@
-# Novo Studio – Stitch Prompt (webarchitect Studio Archetype)
+# Novo Studio – Hyper-Optimized Anti-Slop Stitch Prompt
 
 ```markdown
-Design an anti-slop, high-craft Scandinavian Web-as-a-Service (WaaS) studio landing page for "Novo Studio" (novostudio.se) using the Stitch Web Architect framework (Studio Archetype).
+Design a precision-engineered, ultra-crisp Scandinavian Web-as-a-Service (WaaS) landing page for "Novo Studio" (novostudio.se) using Stitch Web Architect framework. Zero fluff, high craft, maximum converting clarity.
 
-STRICT ANTI-SLOP CONSTRAINTS (MANDATORY):
-- BANNED: Medium blue buttons (#2563EB), identical 3-card equal grids, fake grey wireframe placeholder lines, generic "Get Started" buttons, inline raw emoji text strings ("🟢 SSL-Säkrad | ⚡ Speed").
-- Background MUST be Warm Nordic Paper / Zinc (#FAF9F6). Text MUST be Deep Ink Black (#121316). Accent MUST be Electric Terracotta (#F97316) or Deep Ink Black.
-- Primary Buttons MUST have physical depth (4px offset shadow or 1px inset highlight, translateY -1px hover lift).
-- Layout MUST use an ASYMMETRIC BENTO GRID with varying card sizes, 1.5px hairline borders (#D8D5CB), and one dark graphite contrast card.
+LAYOUT & STRUCTURE BLUEPRINT:
+1. Header Bar:
+   - Sticky frosted header background (#FAF9F6 with 1.5px hairline border-bottom #D8D5CB).
+   - Left: Logo "Novo Studio" (Space Grotesk 800) with a 6px Terracotta dot (#F97316).
+   - Right: Nav (Erbjudande, Fördelar, Pris) + Ink Black button "Se gratis prototyp" (shadow-[3px_3px_0px_0px_#121316]).
 
-Typography:
-- Display Statement: Bricolage Grotesque 800 or Fraunces 700 Italic (for hero headline).
-- Headings: Space Grotesk 700.
-- Body: Outfit 400.
-- Tech Metrics: JetBrains Mono 500.
+2. Hero Section (Asymmetric Split 60/40):
+   - Left (60%):
+     - Display Headline (Bricolage Grotesque / Fraunces 700 Italic, 4rem font size): "Vi bygger din nya hemsida gratis i förväg."
+     - Subtitle (Outfit 400, #52525B): "Blixtsnabb laddtid, inkluderat SSL-certifikat, teknisk SEO och fria ändringar för 500 kr/månad."
+     - Performance Ribbon (3 crisp hairline micro-cards in JetBrains Mono with Emerald Green #059669 indicators):
+       - Card 1: `● HTTPS Active` (glowing green dot)
+       - Card 2: `⚡ 100/100 Speed`
+       - Card 3: `🚀 < 0.3s Load`
+     - CTA Button: "Se din färdiga prototyp gratis" in Terracotta (#F97316) with tactile 4px offset shadow (shadow-[4px_4px_0px_0px_#121316]).
+     - Trust Micro-copy: "✓ 0 kr i startavgift • 3 månaders risktrygg provtid."
+   - Right (40%):
+     - "Live Industry Simulator Widget": Bento card featuring 3 interactive tabs (🛠️ Snickare, ✂️ Frisör, 🍽️ Restaurang).
+     - Renders a REAL styled mini-card of Svenssons Bygg AB with a craftsman photo, headline, green SSL badge, and clickable "Ring Nu" button.
 
-Key Layout Sections:
-1. Header:
-   - Left: Logo "Novo Studio" in Space Grotesk 800 with a small terracotta dot.
-   - Right: Nav links (Erbjudande, Fördelar, Pris) + Deep Ink Black CTA button "Se gratis prototyp".
+3. Asymmetric Bento Grid (6 Crisp Advantage Cards):
+   - Card 1 (2-column wide, Deep Ink Black #121316 bg, White text): "100% Managed Service" – "Skicka ett SMS så ändrar vi bilder och text åt dig inom 24h. Inget krångel."
+   - Card 2 (Large JetBrains Mono metric): "Blixtsnabb Laddtid" – Displays massive `<0.3s` metric and 100/100 Lighthouse score.
+   - Card 3: "Gratis SSL-Certifikat" – Permanent HTTPS security badge in Emerald Green.
+   - Card 4: "Teknisk SEO" – Optimized for local Google search ranking.
+   - Card 5: "Ingen Startavgift" – 0 kr upfront vs 30 000 kr traditional agency cost.
+   - Card 6: "3 Månaders Provtid" – Risk-free trial period (1 000 kr/mo trial ➔ 500 kr/mo regular).
 
-2. Hero Section (Split Layout + Elegant Performance Ribbon):
-   - Left Column:
-     - Dramatic Bricolage Grotesque Headline: "Vi bygger din nya hemsida gratis i förväg – se potentialen."
-     - Subheadline: "Blixtsnabb laddtid, inkluderat SSL-certifikat, teknisk SEO och fria ändringar för 500 kr/månad."
-     - Elegant Performance Ribbon (3 minimal micro-badges in JetBrains Mono with 1px hairline borders):
-       - 🔒 `● HTTPS Active` (Emerald Green glowing dot)
-       - ⚡ `100/100 Google Speed`
-       - 🚀 `< 0.3s Load Time`
-     - Primary CTA Button: "Se din färdiga prototyp gratis" in Electric Terracotta (#F97316) with 4px offset shadow.
-     - Trust Badge: "✓ 0 kr i startavgift • 3 månaders risktrygg provtid."
-   - Right Column: "Living Industry Showcase Card"
-     - Render a REAL styled mini-card showing a live craftsman site preview (Svenssons Bygg AB):
-       - Mini Desktop/Mobile Card: Photo of craftsman, clear headline, and a prominent clickable "Ring Nu" button.
-
-3. Asymmetric Bento Grid (6 Advantage Cards):
-   - Card 1 (Large 2-span): "Blixtsnabb Laddtid (< 0.3s)" with a live animated JetBrains Mono speed gauge (100/100).
-   - Card 2 (Deep Ink Black #121316 Panel): "100% Managed Service" – "Skicka ett SMS så ändrar vi bilder och text åt dig inom 24h. Inget krångel."
-   - Card 3: "Inkluderat SSL-Certifikat (HTTPS)" – Always free Emerald Green security badge (#059669).
-   - Card 4: "Teknisk SEO-optimering" – Built for Google local search ranking.
-   - Card 5: "Ingen startavgift på 30 000 kr" – Predictable 500 kr/month subscription.
-   - Card 6: "3 månaders provtid" – Risk-free trial period (1 000 kr/month trial period).
-
-4. Pricing Card Section:
-   - High-contrast Crisp White Card (#FFFFFF) with 1.5px border (#D8D5CB):
-     - Title: "Novo Studio Abonnemang"
+4. High-Contrast Pricing Card:
+   - Crisp White Card (#FFFFFF) with 1.5px solid border (#D8D5CB):
+     - Header: "Novo Studio Abonnemang"
      - Price: "1 000 kr / mån" (Provtid Månad 1–3) ➔ "500 kr / mån" (Från månad 4)
-     - Included checklist: Hosting, SSL-Certifikat, Teknisk SEO, Drift, Fria ändringar.
+     - Included checklist: Hosting, SSL-Certifikat, Teknisk SEO, Övervakning & Drift, Fria ändringar.
      - CTA Button: "Skapa mitt gratis förslag".
 
 5. Lead Capture Form:
-   - Clean 3-field card: Företagsnamn, Stad/Bransch, E-post/Telefon, and button "Skicka förfrågan".
+   - Minimal 3-input card (#FFFFFF bg, 1.5px hairline inputs): Företagsnamn, Stad/Bransch, E-post/Telefon. Button: "Skicka förfrågan".
 
-Execution Quality: Crisp 1.5px hairline borders (#D8D5CB), 14px card radius, tactile buttons with physical depth, responsive down to mobile.
+STRICT STYLING DIRECTIVES:
+- Colors: Warm Paper #FAF9F6 bg, Crisp White #FFFFFF cards, Deep Ink Black #121316, Terracotta Accent #F97316, Emerald Green #059669, Borders 1.5px solid #D8D5CB.
+- NO generic blue buttons (#2563EB), NO identical 3-card equal grids, NO grey wireframe placeholder lines, NO raw inline emoji strings.
+- Tactile depth on all buttons with offset drop shadows. Responsive down to mobile.
 ```
